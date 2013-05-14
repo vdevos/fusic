@@ -1,0 +1,41 @@
+.bg-tile { border: 0px !important; }
+
+.friends-container { width: 660px; margin: 20px auto; }
+.friend-container { height: 110px; width: 100%; padding-top: 5px; padding-bottom: 8px; }
+.friend-padding { padding: 0 5px; }
+
+.friend-title a { color:white; }
+.friend-title { position: absolute; color: white; width: 110px; height: 25px; background: rgba(0, 0, 0, 0.6);
+    font-size: 16px; font-weight: 800; text-align: center; margin-top: 85px;
+ }
+ 
+.friend-cover { height: 100%; width: 110px; padding-right: 5px; float: left; position:relative; }
+.user-cover { width: 100px; height: 100px; float: left; border-radius: 3px; }
+.cover-dummy { opacity: 0.3; }
+
+.meta-friends	{ width: 100%; height:55px;  margin-top: 2px; }
+.meta-playlists 	{ width: 100%; height:55px; }
+
+.meta-friends span 	{ height: 30px; padding: 0 10px; padding-top: 18px; display:inline-block; float: left; }
+.meta-playlists span	{ height: 30px; padding: 0 10px; padding-top: 18px; display:inline-block; float: left; }
+.meta-friends i	 { font-size: 20px; float: left; }
+.meta-playlists i { font-size: 20px; float: left; }
+.meta-friends .cover-link { margin-right:2px; }
+.meta-playlists .cover-link { margin-right:2px; }
+
+
+.no-friends { font-size:18px; padding:10px; }
+.more { 
+	float:left; 
+	height: 45px; width:30px; 
+	padding-top:10px; padding-left:5px; 
+	text-align:center; font-size:30px; font-weight:800;
+}
+.more a { color:black; }
+
+
+
+/*
+.friend-actions { width: 40px; height: 100%; float: left; }
+.action-item { height: 36px; width: 36px; }
+*/

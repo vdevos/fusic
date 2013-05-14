@@ -1,0 +1,38 @@
+/* [ PLAYLISTS / CREATE ] */
+form { margin-bottom: 0px; }
+.container { width: 800px; }
+.widget-content { padding-bottom: 10px; }
+.profile-create-cover-actions .dropdown-menu { position:relative; }
+.control-label { text-align: right; padding-top: 4px; }
+
+#widget-profile-create { margin-top: 20px; }
+#widget-profile-create .profile-create-container{ width: 560px; height: 200px; }
+#widget-profile-create .profile-create-title input { 
+	height: 35px; 
+	width: 100% !important; 
+	line-height: 38px;
+	text-indent: 10px; 
+	font-size: 28px; 
+	padding: 5px 0; 
+}
+#widget-profile-create .profile-create-cover-container { width: 160px; height: 200px; padding: 0 10px; }
+#widget-profile-create .profile-create-cover-actions { margin-top: 5px; }
+#widget-profile-create .profile-create-cover-actions button { width: 158px; }
+#widget-profile-create .profile-create-cover {
+	min-width: 130px; max-width: 150px; width: 150px;
+	min-height: 130px; min-height: 150px; height: 150px;
+}
+
+#widget-profile-create .profile-create-actions { float: left; width: 320px; padding-bottom:0px; }
+#widget-profile-create .profile-create-actions label { width: 60px; float: left; }
+#widget-profile-create .profile-create-actions .controls { float:left; margin-left: 10px; }
+#widget-profile-create .profile-create-actions input { width: 220px; }
+#widget-profile-create .profile-create-actions textarea { width: 220px; }
+#widget-profile-create .profile-buttons { width: 230px; }
+
+#widget-profile-create .profile-buttons #return { float: right; margin-right: 5px; }
+#widget-profile-create .profile-buttons #create { float: right; }
+
+.alert { width: 420px; margin-left: 8px;  }
+.success { border: 1px solid #468847; }
+.error { border: 1px solid red; }

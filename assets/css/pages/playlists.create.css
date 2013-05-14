@@ -1,0 +1,35 @@
+/* [ PLAYLISTS / CREATE ] */
+form { margin-bottom: 0px; }
+.container { width: 900px; }
+.widget-content { padding-bottom: 10px; }
+
+#widget-playlist-create { margin-top: 20px; }
+#widget-playlist-create .playlist-create-container{ width: 560px; height: 200px; }
+#widget-playlist-create .playlist-create-title { width: 540px; padding: 1px; }
+#widget-playlist-create .playlist-create-title input { 
+	height: 35px; 
+	width: 100% !important; 
+	line-height: 38px;
+	text-indent: 10px; 
+	font-size: 28px; 
+	padding: 5px 0; 
+}
+#widget-playlist-create .playlist-create-cover-container { width: 160px; height: 100%; padding-right: 10px; }
+#widget-playlist-create .playlist-create-cover-actions { margin-top: 5px; }
+#widget-playlist-create .playlist-create-cover-actions button { width: 158px; margin-top: 4px; }
+#widget-playlist-create .playlist-create-cover {
+	min-width: 130px; max-width: 150px; width: 150px;
+	min-height: 130px; min-height: 150px; height: 150px;
+}
+
+#widget-playlist-create .playlist-create-actions { float: left; width: 380px; }
+#widget-playlist-create .playlist-create-actions input { width: 100%; }
+#widget-playlist-create .playlist-create-actions textarea { width: 100%; margin-top: 4px; }
+#widget-playlist-create .playlist-buttons { width: 390px; }
+
+#widget-playlist-create .playlist-buttons #return { float: right; margin-right: 5px; }
+#widget-playlist-create .playlist-buttons #create { float: right; }
+
+
+.success { border: 1px solid #468847; }
+.error { border: 1px solid red; }

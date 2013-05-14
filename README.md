@@ -1,7 +1,3 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\VPS#Fusic - Social Music Collaboration 
-
 Fusic is a social music network that enables you to collaborate your favorite music with your friends and discover new music from everyone else!
 
 + Listen to your favorite songs

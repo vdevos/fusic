@@ -1,3 +1,5 @@
+# Fusic
+
 Fusic is a social music network that enables you to collaborate your favorite music with your friends and discover new music from everyone else!
 
 + Listen to your favorite songs

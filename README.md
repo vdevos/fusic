@@ -9,6 +9,18 @@ Fusic is a social music network that enables you to collaborate your favorite mu
 + Keep track of your friends and their music activity
 + Follow new playlists and discover new music from other other users
 
+
+# GIT Rules
+
+If you want to contribute, please read this page on [How To Fork A Repo](https://help.github.com/articles/fork-a-repo)
+
+Make sure to test everything you commit in a pull request!
+
+Also make sure you setup your own test database (do not use the __live__ database)
+
+1. Create the database structure using `setup.sql`
+2. Edit the database config file `$FUSIC_ROOT/modules/database/config/database.php`
+
 # Functionality
 
 Checkout the __[API](https://github.com/vdevos/fusic/blob/master/API.md)__ for back-end functionality

@@ -9,8 +9,14 @@ Fusic is a social music network that enables you to collaborate your favorite mu
 + Keep track of your friends and their music activity
 + Follow new playlists and discover new music from other other users
 
+# Kohana
 
-# GIT Rules
+Fusic is build using the Kohana 3.2 PHP Framework
+
+Read this page on the [Documentation](http://kohanaframework.org/3.2/guide/)
+
+
+# GIT
 
 If you want to contribute, please read this page on [How To Fork A Repo](https://help.github.com/articles/fork-a-repo)
 

@@ -61,21 +61,22 @@ Add a new `else if` statement with your domain `fusic.website.nl` bijvoorbeeld.
 
 Each of the following sub-headers describes a view and it's corresponding features. These are features for users that have a account and are logged in. Feautures for users without a account have yet to be specified.
 
-## 1. Explore
+## 1. Explore - `/explore/`
 
-The purpose of this view is discovering new music.
+The purpose of this view is discovering new music:
 
-__Timeline__ Twitter style with song entries from:
-- A new song in a users following playlists
-- A loved song from a friend
+__Timeline__ Twitter style - list of song entries derived from:
+- New songs in playlists that are being followed
+- Loved song from friends
 
-__Trending__ Small list (daily, weekly, monthly etc.) with:
+__Trending__ Twitter style - small list of song entries (daily, weekly, monthly etc.) with:
 - Most loved songs
 - Most played songs
+- Most added songs
 
-## 2. Playlists overview
+## 2. Playlists overview - `/playlists/overview/`
 
-This view shows a overview of playlists that a user __owns__ and __follows__. This view displays the following information for each playlist.
+This view shows an overview of playlists that a user __owns__ and __follows__. This view displays the following information for each playlist.
 
 __Owned__
 - __Info__ title, creation date, tags, description and (optional) image
@@ -94,7 +95,7 @@ __Following__
 - __Actions__
     - Follow or unfollow playlist
 
-## 3. Playlist 
+## 3. Playlist - `/playlist/show/<id>`
 
 This view shows the contents of a playlist and embeds the Fusic Player for playing the actual music
 
@@ -136,11 +137,22 @@ __Stats__ from playlist
     - user
     - date
 
-## 4. Loved songs
+## 4. Loved songs - `/loved/`
 
 The is a playlist view with a list of a users loved songs (see: Playlist)
 
-## 5. Profile
+## 5. Friends - `/friends/`
+
+This view displays all a users friends and some information about them.
+
+__Information__ for each friend
+- Username
+- Cover
+- Total owning playlists
+- Total following playlists
+- Total friends
+
+## 6. Profile - `/user/<username>` 
 
 A view of a users profile
 

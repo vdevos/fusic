@@ -32,9 +32,9 @@ __Never__ use the __live__ database, but setup your own database instead!
 1. Create the initial database structure using `setup.sql`
 2. Adjust the database config file `$FUSIC_ROOT/modules/database/config/database.php`
 
-Add a new `else if` statement with your domain `website.nl` or `localhost`
+Add a new `else if` statement with your domain `fusic.website.nl` bijvoorbeeld.
 
-    else if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'fusic.vdevos.nl')
+    else if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'fusic.website.nl')
     {
         return array
         (

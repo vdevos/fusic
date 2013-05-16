@@ -22,7 +22,18 @@ __GIT__
 
 If you want to contribute, please read this page on [How To Fork A Repo](https://help.github.com/articles/fork-a-repo)
 
+__WARNING__ NEVER PUSH TO THE MASTER BRANCH!
+
 Make sure to test everything before you commit and create a pull request!
+
+1. Clone the repo `git clone git@github.com:vdevos/fusic.git fusic`
+2. Create a new development branch named <user>.<feature> `git branch vdevos.newfeature`
+3. Switch to the new branch `git checkout vdevos.newfeature`
+4. Do some `echo "coding";` and make Fusic more awesome!
+5. Add your changes to the branch `git add .` and commit them `git commit -m "Some info about the feature etc."`
+6. Push the changes in the branch to the Fusic repo `git push -u origin master`
+7. Go the github and make a `Pull Request` from branch `<user>.<feature>` to `master`
+
 
 __Database__
 

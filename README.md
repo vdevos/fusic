@@ -35,6 +35,12 @@ Make sure to test everything before you commit and create a pull request!
 7. Go the github `https://github.com/vdevos/fusic/pull/new/master` 
 8. Make a `Pull Request` from head-branch `vdevos` to base-branch `master`
 
+If you want to keep working in your branch but want to update with the current master use:
+
+    git fetch origin
+    git merge origin/master    
+
+
 
 __Database__
 

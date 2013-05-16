@@ -1,7 +1,8 @@
 # Fusic
 
-Fusic is a social music network that enables you to collaborate your favorite music with your friends and discover new music from everyone else!
+Fusic should be a social music network that enables you to collaborate your favorite music with your friends and discover new music from everyone else!
 
+These items below should be the main features of Fusic version 1.0
 + Listen to your favorite songs
 + Create your own playlists and follow those of others
 + Let friends collaborate in your playlist by making them editors
@@ -9,23 +10,53 @@ Fusic is a social music network that enables you to collaborate your favorite mu
 + Keep track of your friends and their music activity
 + Follow new playlists and discover new music from other other users
 
-# Kohana
-
-Fusic is build using the Kohana 3.2 PHP Framework
-
-Read this page on the [Documentation](http://kohanaframework.org/3.2/guide/)
+For a more detailed description see __Functionality__ below.
 
 
-# GIT
+# Information
+
+__Kohana__
+
+Fusic is build using the Kohana 3.2 PHP Framework - Read the [Documentation](http://kohanaframework.org/3.2/guide/)
+
+__GIT__
 
 If you want to contribute, please read this page on [How To Fork A Repo](https://help.github.com/articles/fork-a-repo)
 
-Make sure to test everything you commit in a pull request!
+Make sure to test everything before you commit and create a pull request!
 
-Also make sure you setup your own test database (do not use the __live__ database)
+__Database__
 
-1. Create the database structure using `setup.sql`
-2. Edit the database config file `$FUSIC_ROOT/modules/database/config/database.php`
+__Never__ use the __live__ database, but setup your own database instead!
+
+1. Create the initial database structure using `setup.sql`
+2. Adjust the database config file `$FUSIC_ROOT/modules/database/config/database.php`
+
+Add a new `else if` statement with your domain `website.nl` or `localhost`
+
+    else if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'fusic.vdevos.nl')
+    {
+        return array
+        (
+            'default' => array
+            (
+                'type'       => 'mysql',
+                'connection' => array(
+                     'hostname'   => 'localhost',
+                     'database'   => 'your_db_name',
+                     'username'   => 'your_db_username',
+                     'password'   => 'your_db_user_password',
+                     'persistent' => FALSE,
+                ),
+                'table_prefix' => '',
+                'charset'      => 'utf8',
+                'caching'      => FALSE,
+                'profiling'    => TRUE,
+            ),
+        );
+    }
+
+
 
 # Functionality
 

@@ -74,11 +74,11 @@ __Trending__ Twitter style - small list of song entries (daily, weekly, monthly 
 - Most played songs
 - Most added songs
 
-## 2. Playlists overview - `/playlists/overview/`
+## 2. Playlists overview - `/playlists/`
 
 This view shows an overview of playlists that a user __owns__ and __follows__. This view displays the following information for each playlist.
 
-__Owned__
+__Owned__ -
 - __Info__ title, creation date, tags, description and (optional) image
 - __Lock__ Public (for friends and other) or Private (only yourself)
 - __Stats__ total songs, play duration, total plays, followers and loves

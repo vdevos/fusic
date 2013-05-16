@@ -60,8 +60,6 @@ Add a new `else if` statement with your domain `fusic.website.nl` bijvoorbeeld.
 
 # Functionality
 
-Checkout the __[API](https://github.com/vdevos/fusic/blob/master/API.md)__ for back-end functionality
-
 Each of the following sub-headers describes a view and it's corresponding features. These are features for users that have a account and are logged in. Feautures for users without a account have yet to be specified.
 
 ## 1. Explore

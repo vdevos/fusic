@@ -22,7 +22,7 @@ __GIT__
 
 If you want to contribute, please read this page on [How To Fork A Repo](https://help.github.com/articles/fork-a-repo)
 
-__WARNING__ NEVER PUSH TO THE MASTER BRANCH!
+__WARNING__ Never __EVER__ push to the master branch! Create a seperate branch and create a __pull request__
 
 Make sure to test everything before you commit and create a pull request!
 

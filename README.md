@@ -12,7 +12,6 @@ These items below should be the main features of Fusic version 1.0
 
 For a more detailed description see __Functionality__ below.
 
-
 # Information
 
 __Kohana__

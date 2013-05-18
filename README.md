@@ -27,7 +27,7 @@ __WARNING__ Never __EVER__ push to the master branch! Create a seperate branch a
 Make sure to test everything before you commit and create a pull request!
 
 1. First time only - clone the repo `git clone git@github.com:vdevos/fusic.git fusic`
-2. Create a new development branch named <user> `git branch vdevos`
+2. Create a new development branch named __yourname__ `git branch vdevos`
 3. Switch to the new branch `git checkout vdevos`
 4. Do some `echo "coding";` and make Fusic more awesome!
 5. Add your changes to the branch `git add .` and commit them `git commit -m "Some info about the feature etc."`

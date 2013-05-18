@@ -22,25 +22,9 @@ __GIT__
 
 If you want to contribute, please read this page on [How To Fork A Repo](https://help.github.com/articles/fork-a-repo)
 
-__WARNING__ Never __EVER__ push to the master branch! Create a seperate branch and create a __pull request__
+Since this project is a __private__ repository everyone is able to merge their own __pull request__ (since you're a collaborator in the project).
 
-Make sure to test everything before you commit and create a pull request!
-
-1. First time only - clone the repo `git clone git@github.com:vdevos/fusic.git fusic`
-2. Create a new development branch named __yourname__ `git branch vdevos`
-3. Switch to the new branch `git checkout vdevos`
-4. Do some `echo "coding";` and make Fusic more awesome!
-5. Add your changes to the branch `git add .` and commit them `git commit -m "Some info about the feature etc."`
-6. Push the changes in the branch to the Fusic repo `git push -u origin vdevos`
-7. Go the github `https://github.com/vdevos/fusic/pull/new/master` 
-8. Make a `Pull Request` from head-branch `vdevos` to base-branch `master`
-
-If you want to keep working in your branch but want to update with the current master use:
-
-    git fetch origin
-    git merge origin/master    
-
-
+Please don't do this (never merge your own pull requests!)
 
 __Database__
 

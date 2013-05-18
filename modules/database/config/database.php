@@ -1,7 +1,7 @@
 <?php defined('SYSPATH') or die('No direct access allowed.');
 
 
-if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'localhost') 
+if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'localhost') /* this is for local development */
 {	
 	return array
 	(
@@ -10,8 +10,8 @@ if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'localhost')
 			'type'       => 'mysql',
 			'connection' => array(
 				 'hostname'   => 'localhost',
-				 'database'   => 'fusicnl_master',
-				 'username'   => 'root',
+				 'database'   => '',
+				 'username'   => '',
 				 'password'   => '',
 				 'persistent' => FALSE,
 			),
@@ -22,7 +22,7 @@ if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'localhost')
 		),
 	);	
 }
-else if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'fusic.vdevos.nl')
+else if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'fusic.website.nl') /* this is your dev website */
 {
 	return array
 	(
@@ -31,9 +31,9 @@ else if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'fusic.vdevos.n
 			'type'       => 'mysql',
 			'connection' => array(
 				 'hostname'   => 'localhost',
-				 'database'   => 'vdevos_fusic',
-				 'username'   => 'vdevos',
-				 'password'   => 'vps8310',
+				 'database'   => '',
+				 'username'   => '',
+				 'password'   => '',
 				 'persistent' => FALSE,
 			),
 			'table_prefix' => '',

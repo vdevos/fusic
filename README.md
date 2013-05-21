@@ -22,10 +22,6 @@ __GIT__
 
 If you want to contribute, please read this page on [How To Fork A Repo](https://help.github.com/articles/fork-a-repo)
 
-Since this project is a __private__ repository everyone is able to merge their own __pull request__ (since you're a collaborator in the project).
-
-Please don't do this (never merge your own pull requests!)
-
 __Database__
 
 __Never__ use the __live__ database, but setup your own database instead!

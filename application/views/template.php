@@ -199,7 +199,7 @@
                 <p class="copyright">
                     <a href="mailto:info@fusic.nl" class="tag-music">Fusic</a> 
                     by <a href="http://www.vdevos.nl" class="tag-social">Vincent de Vos</a> 
-                    &copy; 2012 | Hosted by <a href="http://www.circlehosting.nl/" class="tag-collab">Circle Hosting</a>
+                    &copy; 2011 - 2013
                 </p>	
             </div>		
         </div>

@@ -193,7 +193,7 @@ class Controller_Ajax extends Controller {
                           'id' => $song->id,
                           'title' => $song->title,
                           'date' => $love->loved,
-                          'order' => $love->order,
+                          'order' => $love->loved, // TODO - Feature: Order - Sort by order when fully implemented // $loved->order
                           'added_on' => $song->added,
                           'added_by' => array('id' => $song->user->id, 'username' => $song->user->username),
                           'added_to' => array('id' => $song->playlist->id, 'name' => $song->playlist->name),

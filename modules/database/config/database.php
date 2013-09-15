@@ -10,9 +10,9 @@ if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'localhost')
 			'type'       => 'mysql',
 			'connection' => array(
 				 'hostname'   => 'localhost',
-				 'database'   => 'fusicnl_master',
-				 'username'   => 'root',
-				 'password'   => '',
+				 'database'   => 'vdevos_fusic',
+				 'username'   => 'vdevos',
+				 'password'   => 'vps8310',
 				 'persistent' => FALSE,
 			),
 			'table_prefix' => '',

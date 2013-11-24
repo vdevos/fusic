@@ -400,7 +400,7 @@ var Player = {
         reloadData();
     },
     ScrollToIndex : function(index) {
-        $('html, body').animate({scrollTop: $('ul#songlist').find('li').eq(index).offset().top - 160}, 'fast');
+        $('html, body').animate({scrollTop: $('ul#songlist').find('li').eq(index).offset().top - 200}, 'fast');
     },
     Load : function(data) {
         this.list = data.songs;

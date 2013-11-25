@@ -177,13 +177,13 @@
                 </div>                    
                 <div class="follower-button span2 row-fluid">
                     {{#if isviewer}}
-                        <button class="btn btn-warning meta-button playlist-privilege <?php= (!$isadmin) ? 'disabled' : ''; ?>" 
-                            data-privilege="viewer" data-playlist-id="<?php= $playlist->id; ?>" data-user-id="{{id}}">
+                        <button class="btn btn-warning meta-button playlist-privilege <?php echo (!$isadmin) ? 'disabled' : ''; ?>" 
+                            data-privilege="viewer" data-playlist-id="<?php echo $playlist->id; ?>" data-user-id="{{id}}">
                             <i class="icon-eye-open icon-white" title="Give user 'editor' privilege"></i> <span>Viewer</span></button>                            
                     {{/if}}
                     {{#if iseditor}}
-                        <button class="btn btn-primary meta-button playlist-privilege <?php= (!$isadmin) ? 'disabled' : ''; ?>"
-                            data-privilege="editor" data-playlist-id="<?php= $playlist->id; ?>" data-user-id="{{id}}">
+                        <button class="btn btn-primary meta-button playlist-privilege <?php (!$isadmin) ? 'disabled' : ''; ?>"
+                            data-privilege="editor" data-playlist-id="<?php echo $playlist->id; ?>" data-user-id="{{id}}">
                             <i class="icon-pencil icon-white" title="Give user 'viewer' privilege"></i> <span>Editor</span></button>	                           
                     {{/if}}
                     {{#if isadmin}}

@@ -56,6 +56,13 @@
                 <li class="meta-tab" data-id="followers"><a href="javascript:;"><i class="icon-user"></i> Followers</a></li>
           <?php } ?>
 		  <li class="meta-tab" data-id="stats"><a href="javascript:;"><i class="icon-signal"></i> Stats</a></li>
+		  <?php if ($user->isOwner($playlist)) { ?>
+		  <li class="meta-tab-no-js" title="You own this playlist" style="float:right;"><a href="javascript:;"><i class="icon-asterisk"></i> Owner</a></li>
+		  <?php } else if ($user->is_following_playlist($playlist)) { ?>
+		  <li class="meta-tab-no-js" title="Unfollow this playlist" style="float:right;"><a href="/playlists/unfollow/<?php echo $playlist->id ?>"><i class="icon-minus"></i> Unfollow</a></li>
+		  <?php } else { ?>
+		  <li class="meta-tab-no-js" title="Follow this playlist" style="float:right;"><a href="/playlists/follow/<?php echo $playlist->id ?>"><i class="icon-plus"></i> Follow</a></li>
+		  <?php } ?>
 		</ul>
 		
 		<div id="information-box" class="span well well-small">

@@ -12,7 +12,7 @@
 #information-box { width:100%; margin-top:37px; margin-left:0px; min-height:28px; margin-bottom:25px; }
 #meta-information-box { width:100%;}
 #meta-tabs { margin-bottom: 0px; position: fixed; background: #E9E9E9 url(../../img/body-bg.png) repeat 0 0; width: inherit; padding-right: 20px; padding-top: 22px; margin-top: -22px; z-index: 100; box-shadow: 0px 11px 31px -21px black; }
-.meta-tab a { color:black; }
+.meta-tab a, .meta-tab-no-js a { color:black; }
 
 .user-box { margin-bottom:0px; padding-top:0px; height: 110px; }
 .user-box .cover-link { margin:0px; }

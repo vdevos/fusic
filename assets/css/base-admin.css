@@ -15,12 +15,6 @@ body {
 	height: 100%; 
 	background: #E9E9E9 url(../img/body-bg.png) repeat 0 0; 
 	font: 13px/1.7em 'Open Sans';
-	
-	/* Always show a vertical scrollbar. This gets rid of the ugly 'shifting'
-	of the entire page when a user goes from a page that doesn't need a scroll-bar
-	to one that does. */
-	overflow: -moz-scrollbars-vertical;
-    overflow: scroll;
 }
 p { 	font: 13px/1.7em 'Open Sans'; }
 
@@ -868,11 +862,6 @@ li.sortable-placeholder {
 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25) !important;
 	filter: progid:dximagetransform.microsoft.gradient(enabled=false) !important;
 	border: 1px solid #DDD !important;	
-}
-
-.bg-tile:hover
-{
-	border:1px solid #AAA !important;
 }
 
 .cover-mini { width: 45px; height: 45px; float: left; margin-left: 2px; border-radius: 3px; }

@@ -34,7 +34,7 @@ class Controller_Playlists extends Controller_Fusic {
 	public function action_yours() {
 		
 		$this->template->title = 'Your playlists';
-		$this->template->view = $this->view = View::factory('playlists/overview');	 		
+		$this->template->view = $this->view = View::factory('playlists/overview');	 	
 		
 		/*setup the playlists you own */
 		$this->view->playlist_view = $this->owns_view = View::factory('playlists/sv_playlists');

@@ -316,7 +316,7 @@ var Player = {
                 $.getJSON('/ajax/swap_position_lovedsong', { pid:this.id, sid:song.id, from:this.dragstart, to:this.dragend }, function(data) { });		
             }
             else { // regular playlist
-                $.getJSON('/ajax/swap_position_song', { pid:this.id, from:this.dragstart, to:this.dragend }, function(data) { });		
+                $.getJSON('/ajax/swap_position_song', { pid:this.id, from:song1.id, to:song2.id }, function(data) { });		
             }
             
         }
@@ -400,7 +400,7 @@ var Player = {
         reloadData();
     },
     ScrollToIndex : function(index) {
-        $('html, body').animate({scrollTop: $('ul#songlist').find('li').eq(index).offset().top - 200}, 'fast');
+        $('html, body').animate({scrollTop: $('ul#songlist').find('li').eq(index).offset().top - 160}, 'fast');
     },
     Load : function(data) {
         this.list = data.songs;

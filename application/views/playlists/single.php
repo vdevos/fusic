@@ -337,7 +337,7 @@
             Player.UpdateStatus();
             
             $('.dropdown-toggle').dropdown();
-        });		
+        });	
     }		
             
     /* SONG SEARCH */

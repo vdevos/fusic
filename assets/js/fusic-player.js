@@ -316,7 +316,7 @@ var Player = {
                 $.getJSON('/ajax/swap_position_lovedsong', { pid:this.id, sid:song.id, from:this.dragstart, to:this.dragend }, function(data) { });		
             }
             else { // regular playlist
-                $.getJSON('/ajax/swap_position_song', { pid:this.id, from:song1.id, to:song2.id }, function(data) { });		
+                $.getJSON('/ajax/swap_position_song', { pid:this.id, from:this.dragstart, to:this.dragend }, function(data) { });		
             }
             
         }

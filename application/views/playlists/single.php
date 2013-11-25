@@ -46,36 +46,39 @@
 	<div id="container-right">
 	
 		<ul id="meta-tabs" class="nav nav-tabs margin-bottom:-3px;">
-          <?php if(!isset($ploved)) { ?>
-                <li class="meta-tab" data-id="search"><a href="javascript:;"><i class="icon-search" style="font-size:18px;"></i></a></li>
-          <?php } ?>          
-		  <li class="meta-tab active" data-id="playlist">
-			<a href="javascript:;"><i class="icon-align-justify"></i> Playlist</a>
-		  </li>
-		  <?php if(!isset($ploved)) { ?>
-                <li class="meta-tab" data-id="followers"><a href="javascript:;"><i class="icon-user"></i> Followers</a></li>
-          <?php } ?>
-		  <li class="meta-tab" data-id="stats"><a href="javascript:;"><i class="icon-signal"></i> Stats</a></li>
-		  <?php if ($user->isOwner($playlist)) { ?>
-		  <li class="meta-tab-no-js" title="You own this playlist" style="float:right;"><a href="javascript:;"><i class="icon-asterisk"></i> Owner</a></li>
-		  <?php } else if ($user->is_following_playlist($playlist)) { ?>
-		  <li class="meta-tab-no-js" title="Unfollow this playlist" style="float:right;"><a href="/playlists/unfollow/<?php echo $playlist->id ?>"><i class="icon-minus"></i> Unfollow</a></li>
-		  <?php } else { ?>
-		  <li class="meta-tab-no-js" title="Follow this playlist" style="float:right;"><a href="/playlists/follow/<?php echo $playlist->id ?>"><i class="icon-plus"></i> Follow</a></li>
-		  <?php } ?>
+			<?php if(!isset($ploved)) { ?>
+				<li class="meta-tab" data-id="search"><a href="javascript:;"><i class="icon-search" style="font-size:18px;"></i></a></li>
+			<?php } ?>          
+				<li class="meta-tab active" data-id="playlist">
+				<a href="javascript:;"><i class="icon-align-justify"></i> Playlist</a>
+				</li>
+			<?php if(!isset($ploved)) { ?>
+				<li class="meta-tab" data-id="followers"><a href="javascript:;"><i class="icon-user"></i> Followers</a></li>
+			<?php } ?>
+				<li class="meta-tab" data-id="stats"><a href="javascript:;"><i class="icon-signal"></i> Stats</a></li>
+			<?php if ($isadmin) { ?>
+				<li class="meta-tab-no-js" title="You own this playlist" style="float:right;"><a href="javascript:;"><i class="icon-asterisk"></i> Admin</a></li>
+			<?php } else if ($isfollowing) { ?>
+				<li class="meta-tab-no-js" title="Unfollow this playlist" style="float:right;"><a href="/playlists/unfollow/<?php echo $playlist->id ?>"><i class="icon-minus"></i> Unfollow</a></li>
+			<?php } else { ?>
+				<li class="meta-tab-no-js" title="Follow this playlist" style="float:right;"><a href="/playlists/follow/<?php echo $playlist->id ?>"><i class="icon-plus"></i> Follow</a></li>
+			<?php } ?>
 		</ul>
 		
 		<div id="information-box" class="span well well-small">
 
 			<div id="meta-information-box">
-				
-                <div id="meta-box-search" style="display:none;">                     
-                    <input id="song-search" type="text" class="input-medium search-query" placeholder="Search for songs">
-                    <ul id="song-search-results" class="nav" style="border-radius: 5px; display:none;"></ul>
+                <div id="meta-box-search" style="display:none;">  
+					<?php if ($user->can_edit_playlist($playlist)) { ?>                   
+						<input id="song-search" type="text" class="input-medium search-query" placeholder="Search for songs">
+						<ul id="song-search-results" class="nav" style="border-radius: 5px; display:none;"></ul>
+					<?php } else { ?>
+						<div class="alert alert-info text-center"><strong>You can't add any songs to this playlist because you have no editing privileges yet</strong></div>
+					<?php } ?>
                 </div>
-				<div id="meta-box-playlist" class="span"><div class="alert alert-info"><strong>Loading...</strong></div></div>
+				<div id="meta-box-playlist" class="span"><div class="alert alert-info text-center"><strong>Loading...</strong></div></div>
 				
-				<div id="meta-box-stats" class="span" style="display:none;">							
+				<div id="meta-box-stats" class="span" style="display:none;">		
 					<?php if(!$isadmin) { ?>
 						<?php if($isfollowing) { ?>
 							<a href="#" class="btn btn-success follow-playlist" data-playlist-id="<?php echo $playlist->id; ?>" data-following="yes"><i class="icon-ok-circle icon-white"></i> <span>Following</span></a>

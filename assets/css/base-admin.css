@@ -869,6 +869,11 @@ li.sortable-placeholder {
 	border: 1px solid #DDD !important;	
 }
 
+.bg-tile:hover
+{
+	border:1px solid #AAA !important;
+}
+
 .cover-mini { width: 45px; height: 45px; float: left; margin-left: 2px; border-radius: 3px; }
 .cover-dummy { opacity: 0.3; }
 

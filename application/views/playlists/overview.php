@@ -1,7 +1,7 @@
 <div class="row">    
 	<div class="playlists-container">	
         
-        <? 
+        <?php 
         if(isset($reason)) {             
             if($reason == 'deleted') {
                 echo '<div class="alert alert-error"><strong>Warning: </strong> the playlist you requested has been deleted!</div>';

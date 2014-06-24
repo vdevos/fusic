@@ -10,9 +10,9 @@ if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'localhost')
 			'type'       => 'mysql',
 			'connection' => array(
 				 'hostname'   => 'localhost',
-				 'database'   => 'vdevos_fusic',
-				 'username'   => 'vdevos',
-				 'password'   => 'vps8310',
+				 'database'   => '',
+				 'username'   => '',
+				 'password'   => '',
 				 'persistent' => FALSE,
 			),
 			'table_prefix' => '',
@@ -22,7 +22,7 @@ if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'localhost')
 		),
 	);	
 }
-else if(isset($_SERVER['HTTP_HOST']) && ($_SERVER['HTTP_HOST'] == 'www.fusic.nl' || $_SERVER['HTTP_HOST'] == 'fusic.nl'))
+else if(isset($_SERVER['HTTP_HOST']) && ($_SERVER['HTTP_HOST'] == 'www.domain.nl' || $_SERVER['HTTP_HOST'] == 'domain.nl'))
 {
 	return array
 	(
@@ -31,30 +31,9 @@ else if(isset($_SERVER['HTTP_HOST']) && ($_SERVER['HTTP_HOST'] == 'www.fusic.nl'
 			'type'       => 'mysql',
 			'connection' => array(
 				 'hostname'   => 'localhost',
-				 'database'   => 'vdevos_fusic',
-				 'username'   => 'vdevos',
-				 'password'   => 'vps8310',
-				 'persistent' => FALSE,
-			),
-			'table_prefix' => '',
-			'charset'      => 'utf8',
-			'caching'      => FALSE,
-			'profiling'    => TRUE,
-		),
-	);	
-}
-else if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'fusic.vdevos.nl')
-{
-	return array
-	(
-		'default' => array
-		(
-			'type'       => 'mysql',
-			'connection' => array(
-				 'hostname'   => 'localhost',
-				 'database'   => 'vdevos_fusic',
-				 'username'   => 'vdevos',
-				 'password'   => 'vps8310',
+				 'database'   => '',
+				 'username'   => '',
+				 'password'   => '',
 				 'persistent' => FALSE,
 			),
 			'table_prefix' => '',
